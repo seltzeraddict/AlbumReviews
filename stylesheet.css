@@ -1,0 +1,215 @@
+body {
+    background: #161719;
+    color:	 #D6DBD2;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main,
+.sidebar {
+    padding: 7px;		
+}
+
+.main {
+    margin-top: 7%;
+    width: 85vw;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: #30313355;
+    color: #9C7CA5;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.date-header {
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: #111111;
+    color: #9c7ca5e6;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.75px;
+    position: absolute;
+    right: -23px;
+    top: 18px;
+    margin-bottom: 10px;
+
+}
+
+.album-title {
+    width: fit-content;
+    height: auto;
+    font-size: 19px;
+    border-radius: 2px;
+    background-color: #30313355;
+    color: #BB7E8C;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 0.75px;
+    text-align: left;
+    position: relative;
+    top: 7px;
+    
+}
+
+.blog-entry {
+    background-color: #3031337d;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    min-height: 350px;
+}
+
+.blog-text {
+    max-width: 95%;
+    height: auto;
+    color: #D6DBD2;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.75px;
+    text-align: justify;
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: 14px;
+    top: 15px;
+}
+
+.coverart {
+    display: flex;
+    float: right;
+    height: fit-content;
+    width: auto;
+    margin-top: 5px;
+    border-radius: 1px;
+}
+
+figure.albumcaption {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #bb7e8c;
+    margin-top: 8%;
+    margin-bottom: 1px;
+    width: 180px;
+}
+
+.caption {
+    display: block;
+    width: 180px;
+}
+
+.sidebar {
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #161719;
+    top: 10px;
+    width: 15%;
+    height: 15vh;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    margin-left: 10%;
+    font-size: 13px;
+}
+
+.align-right {
+    float: right;
+    text-align: end;
+}
+
+a:link {
+      color: #bb7e8c;
+}
+
+a:visited {
+      color: #bb7e8c;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main{
+        margin-top: 8%;
+        width: 87vw;
+        font-size: 12px;
+    }
+
+    .sidebar{
+        position: sticky;
+        position: -webkit-sticky;
+        background-color: #161719;
+        width: 12%;
+        font-size: 8px;
+        letter-spacing: 0.75px;
+        margin-right: 0.5px;
+        margin-left: 5%;
+        text-align: end;
+    }
+
+    .align-right {
+        float: right;
+        text-align: end;
+    }
+
+    .date-header{
+        font-size: 18px;
+        position: absolute;
+        right: -3px;
+        top: 16px;
+    }
+
+    .album-title{
+        font-size: 16px;
+    }
+
+    .blog-text{
+        text-align: justify;
+        font-size: 8pt;
+        max-width: 98%;
+    }
+
+    .coverart{
+        max-width: 150px;
+        max-height: 200px;
+        height: fit-content;
+        display: flex;
+        float: right;
+        width: auto;
+        border-radius: 3px;
+        margin-left: -10px;
+        margin-right: 3%;
+    }
+
+    .caption{
+        max-width: 150px;
+        max-height: fit-content;
+        display: block;
+    }
+
+    figure.albumcaption{
+        max-width: 150px;
+        max-height: 190px;
+        font-size: 11px;
+        text-align: center;
+        display: inline-block;
+        color: #bb7e8c;
+        margin-top: 10%;
+        border-radius: 3px;
+
+    }
+
+    img{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
