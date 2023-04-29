@@ -173,14 +173,14 @@ a:visited {
     }
 
     .date-header{
-        font-size: 16px;
+        font-size: 14px;
         position: absolute;
         right: -3px;
         top: 16px;
     }
 
     .album-title{
-        font-size: 18px;
+        font-size: 16px;
         margin-bottom: 18px;
     }
 
