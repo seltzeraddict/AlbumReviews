@@ -173,20 +173,20 @@ a:visited {
     }
 
     .date-header{
-        font-size: 1.8em;
+        font-size: 16px;
         position: absolute;
         right: -3px;
         top: 16px;
     }
 
     .album-title{
-        font-size: 1.9em;
+        font-size: 18px;
         margin-bottom: 18px;
     }
 
     .blog-text{
         text-align: justify;
-        font-size: 1.2em;
+        font-size: 10px;
         max-width: 98%;
     }
 
@@ -200,7 +200,7 @@ a:visited {
         border-radius: 3px;
         margin-left: -13px;
         margin-right: 13%;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .caption{
@@ -218,7 +218,6 @@ a:visited {
         color: #bb7e8c;
         margin-top: 10%;
         border-radius: 3px;
-
     }
 
     img{
