@@ -14,6 +14,7 @@ input, button, textarea, select {
     display: flex;
     justify-content: space-between;
     height: 100%;
+    width: 100vw;
 }
 
 .sidebar {
@@ -27,18 +28,18 @@ input, button, textarea, select {
 
 .sidebar_paragraph {
     float: right;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: end;
     background-color: #161719;
     width: 100vw;
-    height: 5vh;
+    height: 3.8rem;
     border-radius: 1rem 0px 1.3rem 0px;
     padding: 5px 20px 10px 10px;
 }
 
 .blog {
     align-content: center;
-    padding-block: 2rem;
+    padding-block: 1rem;
     padding-top: 6vh;
     width: 95vw;
 }
@@ -46,12 +47,12 @@ input, button, textarea, select {
 .blog_entry {
     height: min-content;
     display: block;
-    width: 90%;
+    width: 95%;
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 2.5rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     position: relative;
     margin-bottom: 5vh;
 }
@@ -60,7 +61,8 @@ input, button, textarea, select {
     content: '';
     display: block;
     border-top: 1px solid white;
-    
+    width: 50%;
+    margin: auto;
 }
 
 .blog_entry_header {
@@ -71,22 +73,32 @@ input, button, textarea, select {
 }
 
 .blog_entry_title {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
     font-weight: 300;
     grid-column: span 4;
     color: #9DB2BF;
 }
 
+em.album_title::before {
+    content: open-quote;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+em.album_title::after {
+    content: close-quote;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
 .blog_entry_date {
-    height: min-content;
-    width: fit-content;
-    top: -10px;
+    grid-column: span 1;
     color: #93a4c9c5;
     font-weight: 100;
-    font-size: 1.1em;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
+    font-size: 1em;
+    padding-left: 15px;
+    padding-top: 10px;
+    text-align: right;
 }
 
 .blog_entry_text {
@@ -113,5 +125,87 @@ input, button, textarea, select {
 
 .albumcover_caption {
     text-align: center;
+
+}
+
+/* HERE BE DRAGONS */
+
+@media(min-width: 900px) {
+    .global_container {
+        
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0px;
+
+    }
+    
+    .sidebar_paragraph {
+        float: right;
+        font-size: 1.2rem;
+        text-align: end;
+        background-color: #161719;
+        width: 100vw;
+        height: 9vh;
+        border-radius: 1rem 0px 1.3rem 0px;
+        padding: 5px 20px 10px 10px;
+    }
+    
+    .blog {
+        align-content: center;
+        /* padding-block: 2rem; */
+        padding-top: 7vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+
+    .blog_entry::before {
+        content: '';
+        display: block;
+        border-top: 1px solid white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blog_entry_header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5,20%);
+        color: #161719;
+    }
+
+    .blog_entry_title {
+        font-size: 1.5rem;
+        font-weight: 300;
+        grid-column: span 4;
+        color: #9DB2BF;
+    }
+    
+    .blog_entry_date {
+        height: min-content;
+        width: fit-content;
+        color: #93a4c9c5;
+        font-weight: 100;
+        font-size: 1.1em;
+        top: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: right;
+    }
+    
+    .blog_entry_text {
+        
+    }
+    
+    .blog_entry_paragraph {
+        font-size: 1.5em;
+        text-align: justify;
+        font-family: 'Poppins', sans-serif;
+        margin-right: 1em;
+        margin-left: 2px;
+    }
+    
 
 }
