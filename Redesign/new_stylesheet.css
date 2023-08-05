@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(135deg, #21262c, #17212e);
-    color:	 #d2dde4;
+    color:	 #c5cdd3;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
     text-rendering: optimizeSpeed;
@@ -32,12 +32,15 @@ input, button, textarea, select {
 
 .global_container::before {
     content: '';
-    background: #9DB2BF;
+    position: fixed;
+    background: #3b4147;
     width: 20px;
     height: 20px;
     z-index: 2;
-    top: 50em;
-    right: 50em;
+    top: 2em;
+    left: 2em;
+    border-radius: 100%;
+    box-shadow: inset 2px 2px 2px;
 }
 
 .sidebar {
@@ -213,6 +216,16 @@ img.albumcover_image_file {
         top: 0px;
 
     }
+
+    .blog_entry_date {
+        position: relative;
+        grid-column: span 1;
+        color: #21262ccb;
+        font-weight: 100;
+        font-size: 1.1rem;
+        top: .9em;
+        text-shadow: inset 4px 2px 4px #21262c;
+    }
     
     .sidebar_paragraph {
         float: right;
@@ -273,14 +286,14 @@ img.albumcover_image_file {
     .blog_entry_title {
         font-size: 1.5rem;
         font-weight: 300;
-        grid-column: span 3;
+        grid-column: span 5;
         color: #9DB2BF;
     }
     
     .blog_entry_date {
         position: relative;
         grid-column: span 1;
-        color: #21262c;
+        color: #21262ccb;
         font-weight: 100;
         font-size: 1.1rem;
         top: .9em;
