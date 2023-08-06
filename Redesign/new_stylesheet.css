@@ -7,7 +7,14 @@ body {
     font-size: 100%;
     text-rendering: optimizeSpeed;
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    
 }
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
 a {
     color: #be9dbf;
@@ -170,7 +177,7 @@ p.blog_entry_date::before {
 .blog_entry_paragraph {
     font-size: 1.1rem;
     line-height: 1.5;
-    text-align: justify;
+    text-align: left;
     width: 91%;
     font-family: 'Poppins', sans-serif;
     margin-right: auto;
@@ -343,7 +350,7 @@ img.albumcover_image_file:hover {
 
     .blog_entry_paragraph {
         font-size: 1.2rem;
-        text-align: justify;
+        text-align: left;
         font-family: 'Poppins', sans-serif;
         margin-right: 1em;
         margin-left: 2px;
@@ -484,7 +491,7 @@ img.albumcover_image_file:hover {
 
     .blog_entry_paragraph {
         font-size: 1.7rem;
-        text-align: justify;
+        text-align: left;
         font-family: 'Poppins', sans-serif;
         margin-right: 1em;
         margin-left: 2px;
