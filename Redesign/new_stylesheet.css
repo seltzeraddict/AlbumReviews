@@ -121,16 +121,20 @@ input, button, textarea, select {
 }
 
 .blog_entry_title {
-    font-size: 1.1rem;
-    font-weight: 300;
-    grid-column: span 3;
+    font-size: .9rem;
+    font-weight: 200;
+    grid-column: span 4;
     color: #be9dbf;
     margin-left: 1vw;
     text-align: left;
+    line-height: 1.2;
+    width: 45vw;
 }
 
 em.album_title {
     color: #e4d2d7;
+    font-size: 1.8rem;
+
 }
 
 em.album_title::before {
@@ -148,17 +152,20 @@ em.album_title::after {
 .blog_entry_date {
     position: relative;
     grid-column: span 1;
-    color: #21262c;
+    color: rgba(255, 255, 255, 0.582);;
     font-weight: 100;
-    font-size: .8em;
-    padding-top: 10px;
+    font-size: .9em;
     width: fit-content;
     text-align: end;
-    text-wrap: nowrap;
 
+    padding-top: .25rem;
+    margin-left: 2rem;
+    text-shadow: inset 4px 2px 4px #21262c;
 }
 
-p.blog_entry_date::before {
+
+
+/* p.blog_entry_date::before {
     content: '';
     position: absolute;
     left: 0rem;
@@ -172,7 +179,7 @@ p.blog_entry_date::before {
     border-radius: 3em;
     overflow: hidden;
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.226));
-}
+} */
 
 .blog_entry_paragraph {
     font-size: 1.1rem;
@@ -187,7 +194,6 @@ p.blog_entry_date::before {
 .albumcover_frame {
     display: flex;
     float: right;
-    /* margin-left: auto; */
     margin-left: -0.5rem;
     margin-right: -0.5rem;
     margin-bottom: 0.5em;
@@ -208,7 +214,7 @@ img.albumcover_image_file {
 
 img.albumcover_image_file:hover {
     filter: brightness(95%) drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.226));
-  }
+}
 
 
 .albumcover_caption {
@@ -246,7 +252,6 @@ img.albumcover_image_file:hover {
         position: fixed;
         top: 0px;
         width: 100vw;
-
         height: 4rem;
         background-color: #161719;
         border-radius: 0rem 0px 2rem 0px;
@@ -307,11 +312,10 @@ img.albumcover_image_file:hover {
     .blog_entry::after {
         content: '';
         display: block;
-        border-top: 1px solid rgba(255, 255, 255, 0.582);
+        border-top: 3px solid rgba(255, 255, 255, 0.582);
         width: 15%;
         margin: auto;
         margin-top: 3em;
-    
     }
 
     .blog_entry_header {
@@ -347,9 +351,8 @@ img.albumcover_image_file:hover {
         display: none;
     }
     
-
     .blog_entry_paragraph {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: left;
         font-family: 'Poppins', sans-serif;
         margin-right: 1em;
@@ -373,7 +376,6 @@ img.albumcover_image_file:hover {
         font-size: 1.1rem;
         color: #bb8f99;
         max-width: 14vw;
-    
     }
 
 }
@@ -387,7 +389,6 @@ img.albumcover_image_file:hover {
         position: fixed;
         top: 0px;
         width: 100vw;
-
         height: 4.3rem;
         background-color: #161719;
         border-radius: 0rem 0px 2rem 0px;
@@ -415,11 +416,9 @@ img.albumcover_image_file:hover {
         margin-left: 2rem;
         text-shadow: inset 4px 2px 4px #21262c;
     }
-
     
     .blog {
         align-content: center;
-        /* padding-block: 2rem; */
         padding-top: 7em;
         margin-left: auto;
         margin-right: auto;
@@ -439,7 +438,7 @@ img.albumcover_image_file:hover {
     .blog_entry::before {
         content: '';
         display: block;
-        border-top: 1px solid white;
+        border-top: 2px solid white;
         width: 85%;
         margin-left: auto;
         margin-right: auto;
@@ -452,7 +451,6 @@ img.albumcover_image_file:hover {
         width: 15%;
         margin: auto;
         margin-top: 3em;
-    
     }
 
     .blog_entry_header {
@@ -463,7 +461,7 @@ img.albumcover_image_file:hover {
     }
 
     .blog_entry_title {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         font-weight: 300;
         grid-column: span 4;
         text-align: left;
@@ -479,7 +477,7 @@ img.albumcover_image_file:hover {
         grid-column: span 2;
         color: rgba(255, 255, 255, 0.582);
         font-weight: 100;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         top: 1rem;
         text-align: end;
     }
@@ -488,9 +486,8 @@ img.albumcover_image_file:hover {
         display: none;
     }
     
-
     .blog_entry_paragraph {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         text-align: left;
         font-family: 'Poppins', sans-serif;
         margin-right: 1em;
@@ -513,23 +510,23 @@ img.albumcover_image_file:hover {
         font-size: 1.1rem;
         color: #bb8f99;
         max-width: 15vw;
-    
     }
+}
 
 
 /* HERE BE DRAGONS 3 */
 
-@media(min-width: 2400px) {
+@media(min-width: 2200px) {
 
     .blog_entry_title {
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-weight: 300;
         grid-column: span 4;
         color: #9DB2BF;
     }
     
     .blog_entry_paragraph {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .sidebar {
@@ -623,8 +620,4 @@ img.albumcover_image_file:hover {
     
     }
     
-
-
-}
-
 }
