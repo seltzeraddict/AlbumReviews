@@ -4,9 +4,11 @@ body {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.8;
-    font-size: 100%;
+    font-size: 1vw;
     text-rendering: optimizeSpeed;
     overflow-x: hidden; /* Hide horizontal scrollbar */
+    margin: 0;
+    width: 100vw;
     
 }
 
@@ -37,7 +39,7 @@ input, button, textarea, select {
     display: flex;
     justify-content: space-between;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -72,7 +74,8 @@ input, button, textarea, select {
     font-size: .7rem;
     text-align: end;
     position: relative;
-    margin-right: .35rem;
+    margin-right: .9rem;
+    top: 0px;
     /* background-color: #161719;
     width: 100vw;
     height: 3rem;
@@ -82,7 +85,7 @@ input, button, textarea, select {
 
 .blog {
     align-content: center;
-    padding-top: 4em;
+    padding-top: 4vh;
     width: 100vw;
     position: relative;
 }
@@ -94,7 +97,8 @@ input, button, textarea, select {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    margin-bottom: 5em;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
 }
 
 .blog_entry::before {
@@ -154,9 +158,10 @@ em.album_title::after {
     grid-column: span 1;
     color: rgba(255, 255, 255, 0.582);;
     font-weight: 100;
-    font-size: .9em;
+    font-size: .9rem;
     width: fit-content;
     text-align: end;
+    top: .2em;
 
     padding-top: .25rem;
     margin-left: 2rem;
@@ -222,6 +227,9 @@ img.albumcover_image_file:hover {
     font-size: 1rem;
     color: #bb8f99;
     max-width: 30vw;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer_grid {
@@ -367,8 +375,8 @@ img.albumcover_image_file:hover {
     }
 
     img.albumcover_image_file {
-        width: 14vw;
-        height: 14vw;
+        width: 15vw;
+        height: 15vw;
         margin-bottom: .5rem;
     }
 
@@ -503,8 +511,8 @@ img.albumcover_image_file:hover {
     }
 
     img.albumcover_image_file {
-        width: 15vw;
-        height: 15vw;
+        width: 16vw;
+        height: 16vw;
     }
 
     .albumcover_caption {
@@ -625,6 +633,7 @@ img.albumcover_image_file:hover {
         color: #bb8f99;
         margin-bottom: 1.5em;
     
+
     }
     
 }
