@@ -132,7 +132,7 @@ input, button, textarea, select {
 }
 
 em.album_title {
-    color: #e4d2d7;
+    color: #bb8f99;
     font-size: 1.8rem;
 
 }
@@ -326,7 +326,7 @@ img.albumcover_image_file:hover {
     }
 
     .blog_entry_title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 300;
         grid-column: span 4;
         text-align: left;
@@ -334,7 +334,8 @@ img.albumcover_image_file:hover {
     }
 
     em.album_title {
-        color: #e4d2d7;
+        font-size: 2.2rem;
+    
     }
     
     .blog_entry_date {
@@ -352,7 +353,7 @@ img.albumcover_image_file:hover {
     }
     
     .blog_entry_paragraph {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-align: left;
         font-family: 'Poppins', sans-serif;
         margin-right: 1em;
@@ -461,7 +462,7 @@ img.albumcover_image_file:hover {
     }
 
     .blog_entry_title {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 300;
         grid-column: span 4;
         text-align: left;
@@ -469,7 +470,7 @@ img.albumcover_image_file:hover {
     }
 
     em.album_title {
-        color: #e4d2d7;
+        font-size: 2rem;
     }
     
     .blog_entry_date {
@@ -572,6 +573,11 @@ img.albumcover_image_file:hover {
         grid-column: span 4;
         color: #be9dbf;
         text-align: left;
+    }
+
+    em.album_title {
+        font-size: 2.2rem;
+    
     }
 
     .blog_entry_date {
