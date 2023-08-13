@@ -335,7 +335,7 @@ img.albumcover_image_file:hover {
 
     em.album_title {
         font-size: 2.2rem;
-    
+        color: #bb8f99;
     }
     
     .blog_entry_date {
@@ -470,7 +470,8 @@ img.albumcover_image_file:hover {
     }
 
     em.album_title {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        color: #bb8f99;
     }
     
     .blog_entry_date {
@@ -576,8 +577,8 @@ img.albumcover_image_file:hover {
     }
 
     em.album_title {
-        font-size: 2.2rem;
-    
+        font-size: 2.4rem;
+        color: #bb8f99;
     }
 
     .blog_entry_date {
