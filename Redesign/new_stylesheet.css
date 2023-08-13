@@ -93,7 +93,7 @@ input, button, textarea, select {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
     margin-top: 4vh;
 }
 
@@ -256,7 +256,7 @@ img.albumcover_image_file:hover {
         position: fixed;
         top: 0px;
         width: 100vw;
-        height: 4rem;
+        height: 3.3rem;
         background-color: #161719;
         border-radius: 0rem 0px 2rem 0px;
         padding-right: 0rem;
@@ -265,7 +265,7 @@ img.albumcover_image_file:hover {
 
     .sidebar_paragraph {
         position: relative;
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-align: end;
         display: inline-block;
         line-height: .4;
@@ -394,7 +394,7 @@ img.albumcover_image_file:hover {
         position: fixed;
         top: 0px;
         width: 100vw;
-        height: 4.3rem;
+        height: 3.8rem;
         background-color: #161719;
         border-radius: 0rem 0px 2rem 0px;
         padding-right: 0rem;
@@ -403,7 +403,7 @@ img.albumcover_image_file:hover {
 
     .sidebar_paragraph {
         position: relative;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         text-align: end;
         display: inline-block;
         line-height: .4;
@@ -415,7 +415,7 @@ img.albumcover_image_file:hover {
         grid-column: span 1;
         color: #21262ccb;
         font-weight: 100;
-        font-size: 1.1rem;
+        font-size: 1rem;
         top: .9em;
         padding-top: .25rem;
         margin-left: 2rem;
@@ -424,7 +424,7 @@ img.albumcover_image_file:hover {
     
     .blog {
         align-content: center;
-        padding-top: 7em;
+        padding-top: 9vh;
         margin-left: auto;
         margin-right: auto;
         width: 60%;
@@ -437,7 +437,7 @@ img.albumcover_image_file:hover {
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        margin-bottom: 13rem;
+        margin-bottom: 15vh;
     }
 
     .blog_entry::before {
