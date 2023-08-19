@@ -21,22 +21,30 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<script src="nav.js" defer></script>
 
 </head>
 <body>
 
 <div class="global_container">
 
-	<div class="menu_sidebar">
+	<button class="mobile-nav-toggle"
+		aria-controls="primary-navigation" aria-expanded="false">
+			<span class="sr-only">Menu</span>
+	</button>
+
+	<div class="menu_sidebar primary-navigation" data-visible="false" id="primary-navigation">
 		<div class="menu_paragraph">
-			<p> menu: 
-				<ul class="menu_ulist">
-					<li><a href="#feedmejack_link">feed me jack - <em>"chumpfrey"</em></a></li>
-					<li><a href="#avec_link">avec plaisir - <em>"an album"</em></a></li>
-					<li><a href="#delta_link">delta sleep - <em>"ghost city"</em></a></li>
-					<li><a href="#clever_link">clever girl - <em>"no drum & bass in the jazz room"</em></a></li>
-					<li><a href="#pool_link">pool kids - <em>"pool kids"</em></a></li>
-				</ul>
+			<p> menu:
+				<nav> 
+					<ul class="menu_ulist">
+						<li><a href="#feedmejack_link"><strong>feed me jack</strong> - <em>"chumpfrey"</em></a></li>
+						<li><a href="#avec_link"><strong>avec plaisir</strong> - <em>"an album"</em></a></li>
+						<li><a href="#delta_link"><strong>delta sleep</strong> - <em>"ghost city"</em></a></li>
+						<li><a href="#clever_link"><strong>clever girl</strong> - <em>"no drum & bass in the jazz room"</em></a></li>
+						<li><a href="#pool_link"><strong>pool kids</strong> - <em>"pool kids"</em></a></li>
+					</ul>
+				</nav>				
 			</p>
 		</div>
 	</div>

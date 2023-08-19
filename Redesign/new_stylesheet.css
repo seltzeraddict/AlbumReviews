@@ -12,11 +12,7 @@ body {
     
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+
 
 a {
     color: #be9dbf;
@@ -43,19 +39,25 @@ input, button, textarea, select {
     overflow: hidden;
 }
 
-/* .global_container::before {
-    content: '';
+.mobile-nav-toggle {
+    display: none;
+    position: absolute;
+    opacity: 80;
+    transition: 0.3;
     position: fixed;
-    transform: translate(-50%, -50%);
-    background: #21262c;
-    width: 3rem;
-    height: 3rem;
-    z-index: 2;
-    top: 0em;
-    left: 0em;
-    border-radius: 100%;
-} */
+    z-index: 9999;
+    background: url(/images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 1.2rem;
+    height: 100%;
+    border: 0;
+    top: .8rem;
+    left: 1rem;
+}
 
+span.sr-only {
+    display: none;
+}
 
 .sidebar {
     position: fixed;
@@ -67,6 +69,7 @@ input, button, textarea, select {
     border-radius: 0rem 0px 2rem 0px;
     padding-right: .5rem;
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.363));
+    z-index: 1500;
 }
 
 .sidebar_paragraph {
@@ -155,7 +158,7 @@ em.album_title::after {
     grid-column: span 1;
     color: rgba(255, 255, 255, 0.582);;
     font-weight: 100;
-    font-size: .9rem;
+    font-size: .8rem;
     width: fit-content;
     text-align: end;
     top: .2em;
@@ -227,15 +230,53 @@ img.albumcover_image_file:hover {
     font-size: 1rem;
 }
 
-/* HIDE MENU ON SMALL SCREEN */
+/* ALTER MENU ON SMALL SCREEN */
 
-@media(max-width: 700px) {
+@media(max-width: 900px) {
     .menu_sidebar {
-        display: none;
+        display: flex;
+        transform: translateX(-110%);
+        background-color: #161719;
+        filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.363));
+        position: fixed;
+        opacity: 95%;
+        top: 2rem;
+        width: 55vw;
+        height: auto;
+        border-radius: 1px 1px 1rem 0px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: .5rem;
+        padding-top: 1rem;
+        z-index: 1000;
+        transition: transform 250ms ease-out;
     }
 
     .menu_paragraph {
-        display: none;
+        display: block;
+        position: relative;
+        font-size: 1rem;
+        line-height: 1.4;
+        text-wrap: balance;
+        display: inline-block;
+    }
+
+    li {
+        margin: 1rem 0;
+        list-style-type: "\1F3A7";
+    }
+
+    a.link_anchor {
+        opacity: 0%;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .menu_sidebar[data-visible="true"] {
+        transform: translateX(0%);
+
     }
 
 }
@@ -321,8 +362,7 @@ img.albumcover_image_file:hover {
     
     .blog {
         align-content: center;
-        /* padding-block: 2rem; */
-        padding-top: 7em;
+        padding-top: 5vh;
         padding-left: 10vw;
         margin-left: auto;
         margin-right: auto;
@@ -594,8 +634,7 @@ img.albumcover_image_file:hover {
     
     .blog {
         align-content: center;
-        /* padding-block: 2rem; */
-        padding-top: 7vh;
+        padding-top: 6vh;
         margin-left: auto;
         margin-right: auto;
         width: 45%;
