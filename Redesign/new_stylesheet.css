@@ -251,7 +251,6 @@ img.albumcover_image_file:hover {
         border-radius: 1px 1px 10px 0px;
         padding-right: 1rem;
         padding-left: 1rem;
-        padding-bottom: .5rem;
         padding-top: 1rem;
         z-index: 1000;
         transition: transform 250ms ease-out;
@@ -268,13 +267,14 @@ img.albumcover_image_file:hover {
     }
 
     li {
-        margin: 1rem 0;
+        margin-bottom: 1.5rem;
         list-style-type: "\1F3A7";
         text-wrap: balance;
     }
 
     a.link_anchor {
         opacity: 0%;
+        line-height: 0.02;
     }
 
     .mobile-nav-toggle {
@@ -531,7 +531,6 @@ img.albumcover_image_file:hover {
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        margin-bottom: 15vh;
     }
 
     .blog_entry::before {
@@ -562,13 +561,15 @@ img.albumcover_image_file:hover {
     .blog_entry_title {
         font-size: 1.4rem;
         font-weight: 300;
-        grid-column: span 4;
+        grid-column: span 3;
         text-align: left;
+        max-width: 45ch;
+        text-wrap: balance;
         color: #be9dbf;
     }
 
     em.album_title {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
         color: #bb8f99;
     }
     
