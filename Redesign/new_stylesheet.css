@@ -8,10 +8,8 @@ body {
     text-rendering: optimizeSpeed;
     overflow-x: hidden; /* Hide horizontal scrollbar */
     margin: 0;
-    width: 99vw;
-    
+    width: 99vw; 
 }
-
 
 
 a {
@@ -42,7 +40,8 @@ input, button, textarea, select {
 .mobile-nav-toggle {
     display: none;
     position: absolute;
-    opacity: 60%;
+    opacity: 40%;
+    transition: opacity 400ms ease-in;
     transition: 0.3;
     position: fixed;
     z-index: 9999;
@@ -353,11 +352,26 @@ img.albumcover_image_file:hover {
     }
 
     ul.menu_ulist {
-        font-size: .8rem; 
-}
+        font-size: .8rem;
+        /* overflow: hidden; 
+        overflow-y: scroll; */
+        max-height: 6.5rem;
+    }
+
+    /* ul.menu_ulist::-webkit-scrollbar {
+        width: .5rem;
+        opacity: 60%;
+    }
+
+    ul.menu_ulist::-webkit-scrollbar-thumb {
+        background: white; 
+    } */
+      
+
 
     li {
-        margin: .33rem 0;
+        margin-bottom: 1rem;
+        font-size: .8rem;
         list-style-type: "\1F3A7";
     }
 
