@@ -134,12 +134,12 @@ span.sr-only {
     margin-left: 1vw;
     text-align: left;
     line-height: 1.2;
-    width: 45vw;
+    width: 50vw;
 }
 
 em.album_title {
     color: #bb8f99;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 em.menu_album_title {
@@ -248,7 +248,7 @@ img.albumcover_image_file:hover {
         top: 2rem;
         width: 70%;
         height: auto;
-        border-radius: 1px 1px 1rem 0px;
+        border-radius: 1px 1px 10px 0px;
         padding-right: 1rem;
         padding-left: 1rem;
         padding-bottom: .5rem;
@@ -286,8 +286,8 @@ img.albumcover_image_file:hover {
     }
 
     .menu_sidebar[data-visible="true"] + .blog {
-        filter: blur(2.5px);
-        -webkit-filter: blur(2.5px);
+        filter: blur(2.4px);
+        -webkit-filter: blur(2.4px);
     }
 
     .blog {
@@ -295,7 +295,7 @@ img.albumcover_image_file:hover {
         padding-top: 2rem;
         width: 100vw;
         position: relative;
-        transition: filter 250ms ease-out, -webkit-filter 250ms ease-out;
+        transition: filter 300ms ease-out, -webkit-filter 300ms ease-out;
     }
 
 }
