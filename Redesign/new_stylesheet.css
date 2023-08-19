@@ -265,6 +265,7 @@ img.albumcover_image_file:hover {
     li {
         margin: 1rem 0;
         list-style-type: "\1F3A7";
+        text-wrap: balance;
     }
 
     a.link_anchor {
