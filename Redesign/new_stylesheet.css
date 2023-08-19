@@ -48,11 +48,13 @@ input, button, textarea, select {
     z-index: 9999;
     background: url(/images/icon-hamburger.svg);
     background-repeat: no-repeat;
-    width: 1.4rem;
+    width: 1.8rem;
     height: 100%;
     border: 0;
-    top: .8rem;
-    left: 1rem;
+    top: .2rem;
+    left: .2rem;
+    margin-left: .7rem;
+    margin-top: .7rem;
 }
 
 span.sr-only {
@@ -138,7 +140,10 @@ span.sr-only {
 em.album_title {
     color: #bb8f99;
     font-size: 1.8rem;
+}
 
+em.menu_album_title {
+    color: #bb8f99;
 }
 
 em.album_title::before {
@@ -230,7 +235,7 @@ img.albumcover_image_file:hover {
     font-size: 1rem;
 }
 
-/* ALTER MENU ON SMALL SCREEN */
+/* ALTER MENU WITH JAVASCRIPT MENU ON SMALL SCREEN */
 
 @media(max-width: 900px) {
     .menu_sidebar {
@@ -241,7 +246,7 @@ img.albumcover_image_file:hover {
         position: fixed;
         opacity: 95%;
         top: 2rem;
-        width: 75%;
+        width: 70%;
         height: auto;
         border-radius: 1px 1px 1rem 0px;
         padding-right: 1rem;
@@ -249,7 +254,7 @@ img.albumcover_image_file:hover {
         padding-bottom: .5rem;
         padding-top: 1rem;
         z-index: 1000;
-        transition: transform 200ms ease-out;
+        transition: transform 250ms ease-out;
         text-wrap: balance;
     }
 
@@ -278,7 +283,19 @@ img.albumcover_image_file:hover {
 
     .menu_sidebar[data-visible="true"] {
         transform: translateX(0%);
+    }
 
+    .menu_sidebar[data-visible="true"] + .blog {
+        filter: blur(2.5px);
+        -webkit-filter: blur(2.5px);
+    }
+
+    .blog {
+        align-content: center;
+        padding-top: 2rem;
+        width: 100vw;
+        position: relative;
+        transition: filter 250ms ease-out, -webkit-filter 250ms ease-out;
     }
 
 }
@@ -337,8 +354,7 @@ img.albumcover_image_file:hover {
 
     ul.menu_ulist {
         font-size: .8rem; 
-
-    }
+}
 
     li {
         margin: .33rem 0;
