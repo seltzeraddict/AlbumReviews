@@ -28,6 +28,8 @@
 
 <div class="global_container">
 
+	<a id="header_link" class="link_anchor">.</a>
+	
 	<button class="mobile-nav-toggle"
 		aria-controls="primary-navigation" aria-expanded="false">
 			<span class="sr-only">Menu</span>
@@ -204,6 +206,19 @@
 				Math Class playlist [<a href="https://open.spotify.com/playlist/6kROoqNgtIsHltNO3QU1cQ?si=402f002d725e4ff3">here</a>]
 				<br>
 				kyle / 2023
+			
+				<div class="explosion-container">
+					<form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSf7EtHctm47QkauFGfiyU5CHkHdk0G5OVzo_aNoPOUJd2KcHA/formResponse" method="post" target="hidden_iframe" onsubmit="return handleSubmission();">
+						<input type="text" id="emailInput" name="entry.577411501" placeholder=" give me your email :)">
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="displayThanks();"></iframe>
+				
+				<script src="displayThanks.js"></script>
+				
+				<br>
+				
 			</p>
 		</div>
 
@@ -211,12 +226,14 @@
 
 
 
-	<div class="sidebar">
-		<div class="sidebar_paragraph">
-			<p> album_reviews </p>
-			<p> by_kyle </p>
+	<a href="#header_link">
+		<div class="sidebar">
+			<div class="sidebar_paragraph">
+				<p> album_reviews </p>
+				<p> by_kyle </p>
+			</div>
 		</div>
-	</div>
+	</a>
 
 
 

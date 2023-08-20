@@ -2,6 +2,9 @@ const primaryNav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const blogBody = document.querySelector(".blog");
 const hamburgerImg = document.querySelector(".mobile-nav-toggle");
+const topSidebar = document.querySelector(".sidebar");
+
+const menuItems = document.querySelectorAll('.menu_ulist li a');
 
 
 navToggle.addEventListener('click', () => {
@@ -29,4 +32,30 @@ blogBody.addEventListener('click', () => {
     }
 
     console.log(visibility);
-})
+});
+
+
+
+
+if (window.innerWidth > 900) {
+    const menuItems = document.querySelectorAll('.menu_ulist li a');
+
+    document.addEventListener('mousemove', (e) => {
+        menuItems.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            const dx = e.clientX - centerX;
+            const dy = e.clientY - centerY;
+
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            const maxDistance = Math.sqrt(window.innerWidth**2 + window.innerHeight**2);
+
+            const opacity = .9 - (distance / maxDistance) * 1;
+
+            item.style.opacity = opacity;
+        });
+    });
+}
