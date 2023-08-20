@@ -37,6 +37,29 @@ blogBody.addEventListener('click', () => {
 
 
 
+// if (window.innerWidth > 900) {
+//     const menuItems = document.querySelectorAll('.menu_ulist li a');
+
+//     document.addEventListener('mousemove', (e) => {
+//         menuItems.forEach((item) => {
+//             const rect = item.getBoundingClientRect();
+//             const centerX = rect.left + rect.width / 2;
+//             const centerY = rect.top + rect.height / 2;
+
+//             const dx = e.clientX - centerX;
+//             const dy = e.clientY - centerY;
+
+//             const distance = Math.sqrt(dx * dx + dy * dy);
+
+//             const maxDistance = Math.sqrt(window.innerWidth**2 + window.innerHeight**2);
+
+//             const opacity = .9 - (distance / maxDistance) * 1;
+
+//             item.style.opacity = opacity;
+//         });
+//     });
+// }
+
 if (window.innerWidth > 900) {
     const menuItems = document.querySelectorAll('.menu_ulist li a');
 
@@ -51,11 +74,17 @@ if (window.innerWidth > 900) {
 
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            const maxDistance = Math.sqrt(window.innerWidth**2 + window.innerHeight**2);
+            const minOpacity = 0.2;
+            const maxOpacity = 0.93;
 
-            const opacity = .9 - (distance / maxDistance) * 1;
-
-            item.style.opacity = opacity;
+            if (distance <= 300) {
+                const maxDistance = 300;
+                const opacityRange = maxOpacity - minOpacity;
+                const opacity = maxOpacity - (distance / maxDistance) * opacityRange;
+                item.style.opacity = opacity;
+            } else {
+                item.style.opacity = minOpacity; // Set the opacity to 0.3 if the distance is more than 300px
+            }
         });
     });
 }

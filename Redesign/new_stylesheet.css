@@ -91,7 +91,7 @@ span.sr-only {
     width: 100vw;
     height: 3rem;
     background-color: #161719;
-    border-radius: 0rem 0px 2rem 0px;
+    border-radius: 0rem 0px 1rem 0px;
     padding-right: .5rem;
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.363));
     z-index: 1500;
@@ -102,11 +102,13 @@ span.sr-only {
     line-height: .4;
     font-size: .7rem;
     font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     text-align: end;
     position: relative;
-    margin-right: .9rem;
+    margin-right: 1rem;
     top: 0px;
-    color: #c5cdd3;
+    color: #c5cdd3c9;
 }
 
 .blog {
@@ -253,6 +255,12 @@ img.albumcover_image_file:hover {
     left: 4.9vw;
     bottom: 0;
     width: 100%;
+    opacity: 80%;
+    transition: transform 250ms ease-in;
+}
+
+.footer_grid:hover {
+    opacity: 99%;
 }
 
 .footer_paragraph::before {
@@ -354,6 +362,11 @@ img.albumcover_image_file:hover {
         padding-top: .5rem;
         filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.363));
         z-index: 1500;
+    }
+
+    .sidebar_paragraph {
+        font-size: 0.7rem;
+        color: #c5cdd3fa;
     }
 
 }
@@ -607,7 +620,7 @@ img.albumcover_image_file:hover {
     .blog_entry {
         height: min-content;
         display: block;
-        width: 100%;
+        width: 95%;
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -698,7 +711,7 @@ img.albumcover_image_file:hover {
 
 /* HERE BE DRAGONS 3 */
 
-@media(min-width: 2200px) {
+@media(min-width: 2000px) {
 
     .blog_entry_title {
         font-size: 1.4rem;
@@ -708,7 +721,11 @@ img.albumcover_image_file:hover {
     }
     
     .blog_entry_paragraph {
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+
+    .blog_entry {
+        width: 92%;
     }
 
     .sidebar {
@@ -737,8 +754,7 @@ img.albumcover_image_file:hover {
         padding-top: 6vh;
         margin-left: auto;
         margin-right: auto;
-        width: 45%;
-    }
+   }
 
     .blog_entry_header {
         width: 100%;
