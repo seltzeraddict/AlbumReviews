@@ -25,6 +25,7 @@ blogBody.addEventListener('click', () => {
     if (visibility === "false") {
     } else if (visibility === "true") {
         primaryNav.setAttribute("data-visible", false);
+        hamburgerImg.style.opacity = .4;
     }
 
     console.log(visibility);
