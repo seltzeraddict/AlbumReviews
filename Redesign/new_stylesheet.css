@@ -71,9 +71,19 @@ input, button, textarea, select {
     height: 100%;
     border: 0;
     padding-left: .9rem;
+    padding-right: 1rem;
     padding-top: 1.1rem;
     margin-left: .2rem;
     background-origin: content-box;
+}
+
+.mobile-nav-toggle::after {
+    content: '';
+    position: absolute;
+     top: -50%;
+    left: -50%;
+     width: 200%;
+    height: 200%;
 }
 
 .mobile-nav-toggle:hover {
@@ -301,7 +311,7 @@ img.albumcover_image_file:hover {
         padding-left: 1rem;
         padding-top: 1rem;
         z-index: 1000;
-        transition: transform 250ms ease-out;
+        transition: transform 200ms ease-out;
         text-wrap: balance;
     }
 
@@ -344,7 +354,7 @@ img.albumcover_image_file:hover {
         padding-bottom: 20rem;
         width: 100vw;
         position: relative;
-        transition: filter 300ms ease-out, -webkit-filter 300ms ease-out;
+        transition: filter 220ms ease-out, -webkit-filter 220ms ease-out;
     }
 
     .footer_grid {
