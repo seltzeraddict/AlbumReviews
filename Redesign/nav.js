@@ -35,31 +35,6 @@ blogBody.addEventListener('click', () => {
 });
 
 
-
-
-// if (window.innerWidth > 900) {
-//     const menuItems = document.querySelectorAll('.menu_ulist li a');
-
-//     document.addEventListener('mousemove', (e) => {
-//         menuItems.forEach((item) => {
-//             const rect = item.getBoundingClientRect();
-//             const centerX = rect.left + rect.width / 2;
-//             const centerY = rect.top + rect.height / 2;
-
-//             const dx = e.clientX - centerX;
-//             const dy = e.clientY - centerY;
-
-//             const distance = Math.sqrt(dx * dx + dy * dy);
-
-//             const maxDistance = Math.sqrt(window.innerWidth**2 + window.innerHeight**2);
-
-//             const opacity = .9 - (distance / maxDistance) * 1;
-
-//             item.style.opacity = opacity;
-//         });
-//     });
-// }
-
 if (window.innerWidth > 900) {
     const menuItems = document.querySelectorAll('.menu_ulist li a');
 
@@ -74,7 +49,7 @@ if (window.innerWidth > 900) {
 
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            const minOpacity = 0.3;
+            const minOpacity = 0.2;
             const maxOpacity = 0.96;
 
             if (distance <= 300) {
@@ -83,7 +58,7 @@ if (window.innerWidth > 900) {
                 const opacity = maxOpacity - (distance / maxDistance) * opacityRange;
                 item.style.opacity = opacity;
             } else {
-                item.style.opacity = minOpacity; // Set the opacity to minOpacity if the distance is more than 300px
+                item.style.opacity = minOpacity; // This sets the opacity to minOpacity if the distance is more than 300px
             }
         });
     });
