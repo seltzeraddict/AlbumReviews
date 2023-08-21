@@ -74,8 +74,8 @@ if (window.innerWidth > 900) {
 
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            const minOpacity = 0.2;
-            const maxOpacity = 0.93;
+            const minOpacity = 0.3;
+            const maxOpacity = 0.96;
 
             if (distance <= 300) {
                 const maxDistance = 300;
@@ -83,7 +83,7 @@ if (window.innerWidth > 900) {
                 const opacity = maxOpacity - (distance / maxDistance) * opacityRange;
                 item.style.opacity = opacity;
             } else {
-                item.style.opacity = minOpacity; // Set the opacity to 0.3 if the distance is more than 300px
+                item.style.opacity = minOpacity; // Set the opacity to minOpacity if the distance is more than 300px
             }
         });
     });
