@@ -271,7 +271,7 @@ img.albumcover_image_file:hover {
     text-align: center;
     position: absolute;
     color: #9DB2BF;
-    left: 4.1vw;
+    left: 3.7vw;
     bottom: 0;
     width: 100%;
     opacity: 80%;
@@ -516,7 +516,7 @@ img.albumcover_image_file:hover {
         position: relative;
         margin-bottom: 8rem;
 
-        padding-left: 4rem;
+        padding-left: 3rem;
     }
 
     .blog_entry::before {
