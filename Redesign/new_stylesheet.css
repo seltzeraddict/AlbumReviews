@@ -159,8 +159,6 @@ span.sr-only {
     border-top: 1px solid rgba(255, 255, 255, 0.664);
     width: 10%;
     margin: auto;
-
-    /* left: -2.2vw; */
 }
 
 .blog_entry_header {
@@ -272,7 +270,6 @@ img.albumcover_image_file:hover {
     text-align: center;
     position: absolute;
     color: #9DB2BF;
-    /* left: 3.4vw; */
     bottom: 0;
     width: 100%;
     opacity: 80%;
@@ -504,7 +501,6 @@ img.albumcover_image_file:hover {
         margin-left: 2rem;
         text-shadow: inset 4px 2px 4px #21262c;
     }
-
     
     .blog {
         align-content: center;
